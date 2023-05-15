@@ -1,16 +1,17 @@
 # Guess the secret number
+import random
 
-secret = 19
+secret = random.randint(1, 45)
 
-guess = None
-
-
-while guess != secret:
-    guess = int(input('Guess the number: '))
+while True:
+    guess = int(input('Guess the number (from 1 - 45): '))
 
     if secret == guess:
-        print("Congratulations! Your guess is correct.")
+        print(f"Congratulations! {guess} is the secret number!")
+        break
+    elif secret > guess:
+        print("The secret number is bigger. Try again.")
     else:
-        print("Too bad, this is not the secret number.")
+        print("The secret number is smaller. Try Again")
 
 print('Game over')
