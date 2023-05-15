@@ -8,7 +8,7 @@ while True:
 
     answer = input("Do you want to do another conversion? ")
 
-    if answer == "Yes" or answer == "yes" or answer == "YES":
+    if answer.lower() == "yes":
         print("Ok!")
     else:
         print("Goodbye!")
