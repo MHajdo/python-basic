@@ -1,4 +1,3 @@
-
 print("Hello, this program converts kilometers into miles.")
 
 while True:
@@ -13,8 +12,3 @@ while True:
     else:
         print("Goodbye!")
         break
-
-
-
-
-
