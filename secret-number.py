@@ -8,7 +8,9 @@ secret = random.randint(1, 45)
 with open("resources/score_list.json") as score_file:
     score_list = json.loads(score_file.read())
 
-for score_dict in score_list:
+score_list.sort(key=lambda d: d['attempts'])
+
+for score_dict in score_list[:3]:
     print(f'Best scores: {score_dict["Name"]}, {score_dict["attempts"]} attempts, date: {score_dict["date"]} '
           f'unsuccessful guesses: {score_dict.get("wrong_guesses")}')
 
