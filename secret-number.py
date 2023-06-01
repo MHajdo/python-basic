@@ -72,8 +72,8 @@ while True:
     selection = input("Would you like to: \nA) play a new game, \nB) see the best scores, \nC) quit?")
 
     if selection.upper() == "A":
-        level = input("Which mode would you like to choose?\nA) Easy\nB) Hard")
-        if level.upper() == "A":
+        mode = input("Which mode would you like to choose?\nA) Easy\nB) Hard")
+        if mode.upper() == "A":
             play_game(level="easy")
         else:
             play_game(level="hard")
